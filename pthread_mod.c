@@ -56,6 +56,9 @@ int main(){ /* create some pthread threads */
         num[i] = i;
     }
 
+    memset(level, (-1), sizeof(level));
+    memset(waiting, (-1), sizeof(waiting));
+    
     long start_us, end_us;
     struct timeval t;
 
